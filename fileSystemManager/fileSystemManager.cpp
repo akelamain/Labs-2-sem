@@ -158,7 +158,7 @@ void Directory::WriteDB(Directory *&directories, int size) {
   if (!directories) {
     return;
   }
-`
+
   std::ofstream file("Directories.txt");
   if (!file) {
     std::cout << "Ошибка открытия файла!" << std::endl;

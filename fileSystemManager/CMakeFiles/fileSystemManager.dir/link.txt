@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfileSystemManager.a CMakeFiles/fileSystemManager.dir/fileSystemManager.cpp.o
+/usr/bin/ranlib libfileSystemManager.a

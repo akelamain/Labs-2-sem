@@ -1,23 +1,19 @@
 cmake_minimum_required(VERSION 3.23)
 
-set(project "lab1")
-project(${project})
+project(lab2)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(${project}_SOURCES
-        main.cpp)
+set(SOURCES main.cpp Executor.cpp)
+set(HEADERS Executor.hpp)
 
-add_subdirectory(mymath)
+add_subdirectory(planets)
+add_subdirectory(fileSystemManager)
 
-add_subdirectory(mymath2)
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
-set(${project}_SOURCE_LIST
-        ${${project}_SOURCES})
+target_include_directories(${PROJECT_NAME} PUBLIC planets)
+target_link_libraries(${PROJECT_NAME} planets)
 
-add_executable(${project}
-        ${${project}_SOURCE_LIST})
-
-target_link_libraries(${project} mymath)
-
-target_link_libraries(${project} mymath2)
+target_include_directories(${PROJECT_NAME} PUBLIC fileSystemManager)
+target_link_libraries(${PROJECT_NAME} fileSystemManager)

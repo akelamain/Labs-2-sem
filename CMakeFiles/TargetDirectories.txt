@@ -1,0 +1,9 @@
+/home/akela/Labs-2-sem/CMakeFiles/lab2.dir
+/home/akela/Labs-2-sem/CMakeFiles/edit_cache.dir
+/home/akela/Labs-2-sem/CMakeFiles/rebuild_cache.dir
+/home/akela/Labs-2-sem/planets/CMakeFiles/planets.dir
+/home/akela/Labs-2-sem/planets/CMakeFiles/edit_cache.dir
+/home/akela/Labs-2-sem/planets/CMakeFiles/rebuild_cache.dir
+/home/akela/Labs-2-sem/fileSystemManager/CMakeFiles/fileSystemManager.dir
+/home/akela/Labs-2-sem/fileSystemManager/CMakeFiles/edit_cache.dir
+/home/akela/Labs-2-sem/fileSystemManager/CMakeFiles/rebuild_cache.dir

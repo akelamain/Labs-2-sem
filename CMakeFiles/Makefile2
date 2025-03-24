@@ -63,162 +63,106 @@ CMAKE_BINARY_DIR = /home/akela/Labs-2-sem
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lab2.dir/all
-all: planets/all
-all: fileSystemManager/all
+all: CMakeFiles/lab3.dir/all
+all: fractions/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/lab2.dir/codegen
-codegen: planets/codegen
-codegen: fileSystemManager/codegen
+codegen: CMakeFiles/lab3.dir/codegen
+codegen: fractions/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: planets/preinstall
-preinstall: fileSystemManager/preinstall
+preinstall: fractions/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lab2.dir/clean
-clean: planets/clean
-clean: fileSystemManager/clean
+clean: CMakeFiles/lab3.dir/clean
+clean: fractions/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory fileSystemManager
+# Directory level rules for directory fractions
 
 # Recursive "all" directory target.
-fileSystemManager/all: fileSystemManager/CMakeFiles/fileSystemManager.dir/all
-.PHONY : fileSystemManager/all
+fractions/all: fractions/CMakeFiles/fractions.dir/all
+.PHONY : fractions/all
 
 # Recursive "codegen" directory target.
-fileSystemManager/codegen: fileSystemManager/CMakeFiles/fileSystemManager.dir/codegen
-.PHONY : fileSystemManager/codegen
+fractions/codegen: fractions/CMakeFiles/fractions.dir/codegen
+.PHONY : fractions/codegen
 
 # Recursive "preinstall" directory target.
-fileSystemManager/preinstall:
-.PHONY : fileSystemManager/preinstall
+fractions/preinstall:
+.PHONY : fractions/preinstall
 
 # Recursive "clean" directory target.
-fileSystemManager/clean: fileSystemManager/CMakeFiles/fileSystemManager.dir/clean
-.PHONY : fileSystemManager/clean
+fractions/clean: fractions/CMakeFiles/fractions.dir/clean
+.PHONY : fractions/clean
 
 #=============================================================================
-# Directory level rules for directory planets
-
-# Recursive "all" directory target.
-planets/all: planets/CMakeFiles/planets.dir/all
-.PHONY : planets/all
-
-# Recursive "codegen" directory target.
-planets/codegen: planets/CMakeFiles/planets.dir/codegen
-.PHONY : planets/codegen
-
-# Recursive "preinstall" directory target.
-planets/preinstall:
-.PHONY : planets/preinstall
-
-# Recursive "clean" directory target.
-planets/clean: planets/CMakeFiles/planets.dir/clean
-.PHONY : planets/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lab2.dir
+# Target rules for target CMakeFiles/lab3.dir
 
 # All Build rule for target.
-CMakeFiles/lab2.dir/all: planets/CMakeFiles/planets.dir/all
-CMakeFiles/lab2.dir/all: fileSystemManager/CMakeFiles/fileSystemManager.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=3,4,5 "Built target lab2"
-.PHONY : CMakeFiles/lab2.dir/all
+CMakeFiles/lab3.dir/all: fractions/CMakeFiles/fractions.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=3,4,5 "Built target lab3"
+.PHONY : CMakeFiles/lab3.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab2.dir/all
+CMakeFiles/lab3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 0
-.PHONY : CMakeFiles/lab2.dir/rule
+.PHONY : CMakeFiles/lab3.dir/rule
 
 # Convenience name for target.
-lab2: CMakeFiles/lab2.dir/rule
-.PHONY : lab2
+lab3: CMakeFiles/lab3.dir/rule
+.PHONY : lab3
 
 # codegen rule for target.
-CMakeFiles/lab2.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=3,4,5 "Finished codegen for target lab2"
-.PHONY : CMakeFiles/lab2.dir/codegen
+CMakeFiles/lab3.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=3,4,5 "Finished codegen for target lab3"
+.PHONY : CMakeFiles/lab3.dir/codegen
 
 # clean rule for target.
-CMakeFiles/lab2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2.dir/build.make CMakeFiles/lab2.dir/clean
-.PHONY : CMakeFiles/lab2.dir/clean
+CMakeFiles/lab3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/clean
+.PHONY : CMakeFiles/lab3.dir/clean
 
 #=============================================================================
-# Target rules for target planets/CMakeFiles/planets.dir
+# Target rules for target fractions/CMakeFiles/fractions.dir
 
 # All Build rule for target.
-planets/CMakeFiles/planets.dir/all:
-	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/depend
-	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=6,7 "Built target planets"
-.PHONY : planets/CMakeFiles/planets.dir/all
+fractions/CMakeFiles/fractions.dir/all:
+	$(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/depend
+	$(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=1,2 "Built target fractions"
+.PHONY : fractions/CMakeFiles/fractions.dir/all
 
 # Build rule for subdir invocation for target.
-planets/CMakeFiles/planets.dir/rule: cmake_check_build_system
+fractions/CMakeFiles/fractions.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 planets/CMakeFiles/planets.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fractions/CMakeFiles/fractions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 0
-.PHONY : planets/CMakeFiles/planets.dir/rule
+.PHONY : fractions/CMakeFiles/fractions.dir/rule
 
 # Convenience name for target.
-planets: planets/CMakeFiles/planets.dir/rule
-.PHONY : planets
+fractions: fractions/CMakeFiles/fractions.dir/rule
+.PHONY : fractions
 
 # codegen rule for target.
-planets/CMakeFiles/planets.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=6,7 "Finished codegen for target planets"
-.PHONY : planets/CMakeFiles/planets.dir/codegen
+fractions/CMakeFiles/fractions.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=1,2 "Finished codegen for target fractions"
+.PHONY : fractions/CMakeFiles/fractions.dir/codegen
 
 # clean rule for target.
-planets/CMakeFiles/planets.dir/clean:
-	$(MAKE) $(MAKESILENT) -f planets/CMakeFiles/planets.dir/build.make planets/CMakeFiles/planets.dir/clean
-.PHONY : planets/CMakeFiles/planets.dir/clean
-
-#=============================================================================
-# Target rules for target fileSystemManager/CMakeFiles/fileSystemManager.dir
-
-# All Build rule for target.
-fileSystemManager/CMakeFiles/fileSystemManager.dir/all:
-	$(MAKE) $(MAKESILENT) -f fileSystemManager/CMakeFiles/fileSystemManager.dir/build.make fileSystemManager/CMakeFiles/fileSystemManager.dir/depend
-	$(MAKE) $(MAKESILENT) -f fileSystemManager/CMakeFiles/fileSystemManager.dir/build.make fileSystemManager/CMakeFiles/fileSystemManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=1,2 "Built target fileSystemManager"
-.PHONY : fileSystemManager/CMakeFiles/fileSystemManager.dir/all
-
-# Build rule for subdir invocation for target.
-fileSystemManager/CMakeFiles/fileSystemManager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fileSystemManager/CMakeFiles/fileSystemManager.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 0
-.PHONY : fileSystemManager/CMakeFiles/fileSystemManager.dir/rule
-
-# Convenience name for target.
-fileSystemManager: fileSystemManager/CMakeFiles/fileSystemManager.dir/rule
-.PHONY : fileSystemManager
-
-# codegen rule for target.
-fileSystemManager/CMakeFiles/fileSystemManager.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f fileSystemManager/CMakeFiles/fileSystemManager.dir/build.make fileSystemManager/CMakeFiles/fileSystemManager.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akela/Labs-2-sem/CMakeFiles --progress-num=1,2 "Finished codegen for target fileSystemManager"
-.PHONY : fileSystemManager/CMakeFiles/fileSystemManager.dir/codegen
-
-# clean rule for target.
-fileSystemManager/CMakeFiles/fileSystemManager.dir/clean:
-	$(MAKE) $(MAKESILENT) -f fileSystemManager/CMakeFiles/fileSystemManager.dir/build.make fileSystemManager/CMakeFiles/fileSystemManager.dir/clean
-.PHONY : fileSystemManager/CMakeFiles/fileSystemManager.dir/clean
+fractions/CMakeFiles/fractions.dir/clean:
+	$(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/clean
+.PHONY : fractions/CMakeFiles/fractions.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

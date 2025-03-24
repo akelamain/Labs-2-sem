@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles /home/akela/Labs-2-sem//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/akela/Labs-2-sem && $(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles /home/akela/Labs-2-sem/fractions//CMakeFiles/progress.marks
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fractions/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akela/Labs-2-sem/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fractions/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,92 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fractions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fractions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/akela/Labs-2-sem && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lab3
+# Convenience name for target.
+fractions/CMakeFiles/fractions.dir/rule:
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fractions/CMakeFiles/fractions.dir/rule
+.PHONY : fractions/CMakeFiles/fractions.dir/rule
 
-# Build rule for target.
-lab3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab3
-.PHONY : lab3
-
-# fast build rule for target.
-lab3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
-.PHONY : lab3/fast
-
-#=============================================================================
-# Target rules for targets named fractions
-
-# Build rule for target.
-fractions: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fractions
+# Convenience name for target.
+fractions: fractions/CMakeFiles/fractions.dir/rule
 .PHONY : fractions
 
 # fast build rule for target.
 fractions/fast:
-	$(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/build
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/build
 .PHONY : fractions/fast
 
-Executor.o: Executor.cpp.o
-.PHONY : Executor.o
+fractions.o: fractions.cpp.o
+.PHONY : fractions.o
 
 # target to build an object file
-Executor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Executor.cpp.o
-.PHONY : Executor.cpp.o
+fractions.cpp.o:
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/fractions.cpp.o
+.PHONY : fractions.cpp.o
 
-Executor.i: Executor.cpp.i
-.PHONY : Executor.i
-
-# target to preprocess a source file
-Executor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Executor.cpp.i
-.PHONY : Executor.cpp.i
-
-Executor.s: Executor.cpp.s
-.PHONY : Executor.s
-
-# target to generate assembly for a file
-Executor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Executor.cpp.s
-.PHONY : Executor.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
+fractions.i: fractions.cpp.i
+.PHONY : fractions.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/main.cpp.i
-.PHONY : main.cpp.i
+fractions.cpp.i:
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/fractions.cpp.i
+.PHONY : fractions.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+fractions.s: fractions.cpp.s
+.PHONY : fractions.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/main.cpp.s
-.PHONY : main.cpp.s
+fractions.cpp.s:
+	cd /home/akela/Labs-2-sem && $(MAKE) $(MAKESILENT) -f fractions/CMakeFiles/fractions.dir/build.make fractions/CMakeFiles/fractions.dir/fractions.cpp.s
+.PHONY : fractions.cpp.s
 
 # Help Target
 help:
@@ -199,13 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... fractions"
-	@echo "... lab3"
-	@echo "... Executor.o"
-	@echo "... Executor.i"
-	@echo "... Executor.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... fractions.o"
+	@echo "... fractions.i"
+	@echo "... fractions.s"
 .PHONY : help
 
 
@@ -217,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/akela/Labs-2-sem && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

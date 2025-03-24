@@ -11,8 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.6/CMakeSystem.cmake"
   "CMakeLists.txt"
-  "fileSystemManager/CMakeLists.txt"
-  "planets/CMakeLists.txt"
+  "fractions/CMakeLists.txt"
   "/snap/cmake/1445/share/cmake-3.31/Modules/CMakeCInformation.cmake"
   "/snap/cmake/1445/share/cmake-3.31/Modules/CMakeCXXInformation.cmake"
   "/snap/cmake/1445/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
@@ -52,13 +51,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "planets/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "fileSystemManager/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "fractions/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab2.dir/DependInfo.cmake"
-  "planets/CMakeFiles/planets.dir/DependInfo.cmake"
-  "fileSystemManager/CMakeFiles/fileSystemManager.dir/DependInfo.cmake"
+  "CMakeFiles/lab3.dir/DependInfo.cmake"
+  "fractions/CMakeFiles/fractions.dir/DependInfo.cmake"
   )

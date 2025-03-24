@@ -1,6 +1,0 @@
-Documents /home/user/Documents 120
-Dota2 /home/user/Dota2 130
-Downloads /home/user/Downloads 45
-Music /home/user/Music 300
-Projects /home/user/Projects 10
-Videos /home/user/Videos 50

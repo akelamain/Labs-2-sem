@@ -2,6 +2,7 @@
 #include <cstddef>
 #include <iostream>
 
+
 namespace Fractions {
 class Fraction {
  private:

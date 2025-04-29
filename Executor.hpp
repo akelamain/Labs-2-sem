@@ -1,6 +1,7 @@
 #pragma once
-#include <cstddef>
 
 namespace Executor {
+void PrintDivisors(int N, bool reversed);
+
 void ExecuteApp();
 }  // namespace Executor

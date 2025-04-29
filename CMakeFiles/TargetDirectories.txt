@@ -1,6 +1,0 @@
-/home/akela/Labs-2-sem/CMakeFiles/lab3.dir
-/home/akela/Labs-2-sem/CMakeFiles/edit_cache.dir
-/home/akela/Labs-2-sem/CMakeFiles/rebuild_cache.dir
-/home/akela/Labs-2-sem/fractions/CMakeFiles/fractions.dir
-/home/akela/Labs-2-sem/fractions/CMakeFiles/edit_cache.dir
-/home/akela/Labs-2-sem/fractions/CMakeFiles/rebuild_cache.dir

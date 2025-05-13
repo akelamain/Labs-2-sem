@@ -22,17 +22,17 @@ public:
 
     int q_find(T el) const;
 
-    template <typename U>
-    friend std::ostream& operator<<(std::ostream& out, const MySet<U>& s);
+    template <typename Z>
+    friend std::ostream& operator<<(std::ostream& out, const MySet<Z>& s);
 
-    template <typename U>
-    friend MySet<U> operator+(const MySet<U>& s1, const MySet<U>& s2);
+    template <typename Z>
+    friend MySet<Z> operator+(const MySet<Z>& s1, const MySet<Z>& s2);
 
-    template <typename U>
-    friend MySet<U> operator-(const MySet<U>& s1, const MySet<U>& s2);
+    template <typename Z>
+    friend MySet<Z> operator-(const MySet<Z>& s1, const MySet<Z>& s2);
 
-    template <typename U>
-    friend MySet<U> operator*(const MySet<U>& s1, const MySet<U>& s2);
+    template <typename Z>
+    friend MySet<Z> operator*(const MySet<Z>& s1, const MySet<Z>& s2);
 };
 
 template<class T>
@@ -121,8 +121,8 @@ int MySet<const char*>::q_find(const char* el) const {
     return -1;
 }
 
-template<class U>
-std::ostream& operator<<(std::ostream& out, const MySet<U>& s) {
+template<class Z>
+std::ostream& operator<<(std::ostream& out, const MySet<Z>& s) {
     out << "[";
     for (int i = 0; i < s.size; ++i) {
         if (i > 0) out << ", ";
@@ -132,23 +132,23 @@ std::ostream& operator<<(std::ostream& out, const MySet<U>& s) {
     return out;
 }
 
-template<class U>
-MySet<U> operator+(const MySet<U>& s1, const MySet<U>& s2) {
-    MySet<U> result = s1;
+template<class Z>
+MySet<Z> operator+(const MySet<Z>& s1, const MySet<Z>& s2) {
+    MySet<Z> result = s1;
     result += s2;
     return result;
 }
 
-template<class U>
-MySet<U> operator-(const MySet<U>& s1, const MySet<U>& s2) {
-    MySet<U> result = s1;
+template<class Z>
+MySet<Z> operator-(const MySet<Z>& s1, const MySet<Z>& s2) {
+    MySet<Z> result = s1;
     result -= s2;
     return result;
 }
 
-template<class U>
-MySet<U> operator*(const MySet<U>& s1, const MySet<U>& s2) {
-    MySet<U> result = s1;
+template<class Z>
+MySet<Z> operator*(const MySet<Z>& s1, const MySet<Z>& s2) {
+    MySet<Z> result = s1;
     result *= s2;
     return result;
 }

@@ -34,15 +34,18 @@ void RunApp() {
 
     p3 *= p2;
     plus = p1 + p2;
+    minus = p1 - p2;
 
     bool increase = false;
     std::cout << "Enter 1 to output in ascending degree, 0 to output in descending degree: ";
     std::cin >> increase;
     p3.sort(increase);
     plus.sort(increase);
-
+    minus.sort(increase);
 
     std::cout << "p1 + p2: " << plus << std::endl;
+    std::cout << "p1 - p2: " << minus <<std::endl;
     std::cout << "p1 * p2: " << p3 << std::endl;
 }
 }  // namespace AppRunner
+`

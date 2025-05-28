@@ -25,6 +25,7 @@ class Polynomial {
 
     friend Polynomial operator+(const Polynomial& p1, const Polynomial& p2);
     friend Polynomial operator*(const Polynomial& p1, const Polynomial& p2);
+    friend Polynomial operator-(const Polynomial& p1, Polynomial& p2);
 
     friend std::istream& operator>>(std::istream& in, Polynomial& p);
     friend std::ostream& operator<<(std::ostream& out, Polynomial& p);

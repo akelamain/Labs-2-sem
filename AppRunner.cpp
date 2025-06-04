@@ -48,4 +48,4 @@ void RunApp() {
     std::cout << "p1 * p2: " << p3 << std::endl;
 }
 }  // namespace AppRunner
-`
+

@@ -2,11 +2,11 @@
 
 HeadOfDepartment::HeadOfDepartment(const char* name, int birthYear, double salary)
     : Person(name, birthYear), salary(salary) {
-    std::cout << "Student()" << std::endl;
+    std::cout << "HeadOfDepartment()" << std::endl;
 }
 
 HeadOfDepartment::~HeadOfDepartment() {
-    std::cout << "~Student()" << std::endl;
+    std::cout << "~HeadOfDepartment()" << std::endl;
 }
 
 void HeadOfDepartment::show() const {

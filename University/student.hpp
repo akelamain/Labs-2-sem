@@ -1,13 +1,12 @@
 #pragma once
-#include "professor.hpp"
+#include "person.hpp"
 
-class Student : public Professor {
+class Student : public Person {
 protected:
     int grade;
-    int workingDays;
 
 public:
-    Student(const char* name, int birthYear, int workingDays, int grade);
+    Student(const char* name, int birthYear, int grade);
     ~Student() override;
     void show() const override;
 };

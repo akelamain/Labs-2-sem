@@ -1,7 +1,7 @@
 #include "student.hpp"
 
-Student::Student(const char* name, int birthYear, int workingDays , int grade)
-    : Professor(name, birthYear, workingDays), grade(grade) {
+Student::Student(const char* name, int birthYear, int grade)
+    : Person(name, birthYear), grade(grade) {
     std::cout << "Student()" << std::endl;
 }
 
@@ -11,5 +11,5 @@ Student::~Student() {
 
 void Student::show() const {
     std::cout << "Студент: " << name << ", год рождения: " << birthYear
-              << ", курс: " << grade << ", количество рабочих дней: " << workingDays << std::endl;
+              << ", курс: " << grade << std::endl;
 }

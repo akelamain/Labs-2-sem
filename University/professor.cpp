@@ -1,7 +1,7 @@
 #include "professor.hpp"
 
-Professor::Professor(const char* name, int birthYear, int workingDays)
-    : Person(name, birthYear), workingDays(workingDays) {
+Professor::Professor(const char* name, int birthYear, int workingDays, double salary)
+    : HeadOfDepartment(name, birthYear, salary), workingDays(workingDays) {
     std::cout << "Professor()" << std::endl;
 }
 

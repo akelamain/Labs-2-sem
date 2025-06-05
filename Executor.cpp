@@ -26,20 +26,20 @@ void addElement(MyStack::MyStack<Person*>& people) {
             break;
         }
         case Type::Student: {
-            int workingDays;
-            std::cout << "Введите количество рабочих дней: ";
-            std::cin >> workingDays;
             int grade;
             std::cout << "Введите курс: ";
             std::cin >> grade;
-            people.push(new Student(name, birthYear, workingDays, grade));
+            people.push(new Student(name, birthYear, grade));
             break;
         }
         case Type::Professor: {
             int workingDays;
             std::cout << "Введите количество рабочих дней: ";
             std::cin >> workingDays;
-            people.push(new Professor(name, birthYear, workingDays));
+            double salary;
+            std::cout << "Введите зарплату: ";
+            std::cin >> salary;
+            people.push(new Professor(name, birthYear, workingDays, salary));
             break;
         }
         default:
@@ -49,8 +49,8 @@ void addElement(MyStack::MyStack<Person*>& people) {
 
 void demo(MyStack::MyStack<Person*>& people) {
     people.push(new HeadOfDepartment("Владимир Яковлев", 1956, 100000));
-    people.push(new Student("Сильвестр Сталлоне", 1990, 10, 6));
-    people.push(new Professor("Алексей Сушко", 1978, 3));
+    people.push(new Student("Сильвестр Сталлоне", 1990, 6));
+    people.push(new Professor("Алексей Сушко", 1978, 3, 88888));
 
     print(people);
 
@@ -101,6 +101,7 @@ void menu() {
                 demo(people);
                 return;
             case Task::Exit:
+            clear(people);
                 return;
             default:
                 std::cout << "Неверный номер задания" << std::endl;
